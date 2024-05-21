@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       url: message.url,
       filename: message.filename
     }, (downloadId) => {
-      sendResponse({downloadId: downloadId});
+      sendResponse({ downloadId: downloadId });
     });
     return true; // Will respond asynchronously.
   }
