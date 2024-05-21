@@ -5,7 +5,9 @@
   "description": "Automatically click all download links on the page.",
   "permissions": [
     "activeTab",
-    "downloads"
+    "downloads",
+    "http://*/",
+    "https://*/"
   ],
   "background": {
     "scripts": ["background.js"],
